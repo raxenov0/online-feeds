@@ -1,0 +1,90 @@
+.wrapper{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    background: rgb(112,34,195);
+    background: linear-gradient(173deg, rgba(112,34,195,0.8) 0%, rgba(228,181,23,0.8) 100%);
+}
+.main_content{
+    width: 70%;
+    margin: auto 0;
+    background-color: rgb(0, 0, 0, 0.6);
+    border-radius: 4px;
+    color: white;
+}
+.info{
+    width: 100%;
+    margin: 40px 20px;
+}
+.main_info{
+    display: flex;
+    justify-content: center;
+}
+.fio ,.additional{
+    width: 45%;
+    font-size: 36px;
+    font-weight: 800;
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+.additional p{
+    font-weight: 400;
+    font-size: 28px;
+}
+.additional span{
+    font-weight: 300;
+    font-size: 24px;
+}
+.photo ,.contact{
+    width: 45%;
+}
+.img{
+    width: 100%;
+    border-radius: 100px;
+}
+.technology{
+    margin: 40px 0;
+}
+.technology p{
+    font-size: 28px;
+    font-weight:600;
+}
+.icons{
+    width: 48px;
+    margin: 20px 5px;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.email ,.address, .social, .number{
+    display: flex;
+    margin: 10px 0;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.email span,.address span, .social span, .number span{
+    margin-right: 20px;
+    width: 100px;
+}
+.email .value,.address .value, .social .value, .number .value{
+    width: auto;
+}
+
+.wrapper_contact{
+    margin-left: 40px;
+}
+.icons_contact{
+    width: 48px;
+    margin: 0 3px;
+}

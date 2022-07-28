@@ -1,0 +1,60 @@
+.btn {
+    cursor: pointer;
+    position: relative;
+    width: 40px;
+    height: 25px;
+    margin: 0 20px;
+}
+.btn div {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 5px;
+    background-color: rgb(231 193 7);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    left:0;
+    display: block;
+}
+.btn div::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 5px;
+    top: -5px;
+    right: -8px;
+    background-color: rgb(231 193 7);
+    transform: rotate(45deg);
+}
+.btn div::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 5px;
+    top: 5px;
+    right: -8px;
+    background-color: rgb(231 193 7);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    transform: rotate(-45deg);
+}
+.btn:nth-child(1) div::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 5px;
+    top: -5px;
+    right: 23px;
+    background-color: rgb(231 193 7);
+    transform: rotate(-45deg);
+}
+.btn:nth-child(1) div::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 5px;
+    top: 5px;
+    right: 23px;
+    background-color: rgb(231 193 7);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    transform: rotate(45deg);
+}

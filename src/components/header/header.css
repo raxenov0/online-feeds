@@ -1,0 +1,154 @@
+.group_search      { 
+    position:relative; 
+  }
+  .input_search         {
+    font-size:26px;
+    padding:10px 10px 10px 5px;
+    display:block;
+    width:400px;
+    border:none;
+    border-bottom:1px solid #757575;
+    background-color: rgb(0, 0, 0,0);
+    color: rgb(245 230 230);
+  }
+  .input_search:focus     { outline:none; }
+  
+  /* LABEL ======================================= */
+  .label_search          {
+    color:#999; 
+    font-size:26px;
+    font-weight:normal;
+    position:absolute;
+    pointer-events:none;
+    left:5px;
+    top:10px;
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+  }
+  
+  /* active state */
+  .input_search:focus ~ .label_search, .input_search:valid ~ label    {
+    top:-30px;
+    font-size:22px;
+    color:#d6ac20;
+  }
+  
+  /* BOTTOM BARS ================================= */
+  .bar  { position:relative; display:block; width:300px; }
+  .bar:before, .bar:after   {
+    content:'';
+    height:2px; 
+    width:0;
+    bottom:1px; 
+    position:absolute;
+    background:#d6ac20; 
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+  }
+  .bar:before {
+    left:50%;
+  }
+  .bar:after {
+    right:50%; 
+  }
+  
+  /* active state */
+  .input_search:focus ~ .bar:before, .input_search:focus ~ .bar:after {
+    width:50%;
+  }
+  
+  /* HIGHLIGHTER ================================== */
+  .highlight {
+    position:absolute;
+    height:60%; 
+    width:100px; 
+    top:25%; 
+    left:0;
+    pointer-events:none;
+    opacity:0.5;
+  }
+  
+  /* active state */
+  .input_search:focus ~ .highlight {
+    -webkit-animation:inputHighlighter 0.3s ease;
+    -moz-animation:inputHighlighter 0.3s ease;
+    animation:inputHighlighter 0.3s ease;
+  }
+  .form_search{
+    display: flex;
+   margin: 0 60px;
+    
+  }
+  /* ANIMATIONS ================ */
+  @-webkit-keyframes inputHighlighter {
+    from { background:#d6ac20; }
+    to  { width:0; background:transparent; }
+  }
+  @-moz-keyframes inputHighlighter {
+    from { background:#d6ac20; }
+    to  { width:0; background:transparent; }
+  }
+  @keyframes inputHighlighter {
+    from { background:#d6ac20; }
+    to  { width:0; background:transparent; }
+  }
+  @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200,900');
+  
+  .btn {
+    margin: 10px 0 0 30px;
+    background: rgb(31, 30, 30,0.3);
+    height: 40px;
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+    color: #757575;
+    font-size: 22px;
+    font-family: 'Cookie', cursive;
+    position: relative;
+    transition: 1s;
+    -webkit-tap-highlight-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding-top: 5px;
+  }
+  
+  .btn .circle {
+    width: 5px;
+    height: 5px;
+    
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    overflow: hidden;
+    transition: 500ms;
+  }
+  
+  .noselect {
+    -webkit-touch-callout: none;
+      -webkit-user-select: none;
+       -khtml-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+    margin: 10px 10px 17px 10px;
+  }
+  
+  .btn:hover {
+    background: transparent;
+  }
+  .btn:hover .noselect{
+    color:#d6ac20;
+  }
+  
+  .btn:hover .circle {
+    height: 40px;
+    width: 100px;
+    left: 0;
+    border-radius: 0;
+    border-bottom: 2px solid #d6ac20;
+  }

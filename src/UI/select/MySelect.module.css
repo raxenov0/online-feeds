@@ -1,0 +1,11 @@
+.wrapper{
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 9px;
+    border: 2px solid #d6ac20;
+    margin-right: 30px;
+    background-color: rgb(15,13,13,0.3);
+    color:rgb(228, 217, 217)
+}

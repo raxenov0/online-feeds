@@ -1,0 +1,7 @@
+.paginationBar{
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: rgb(185 175 175 / 70%);
+    display: flex;
+    align-items: center;
+}

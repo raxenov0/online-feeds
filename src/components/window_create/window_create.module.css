@@ -1,0 +1,94 @@
+.fullWindow{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgb(112,34,195);
+    background: linear-gradient(173deg, rgba(112,34,195,0.6) 0%, rgba(228,181,23,0.6) 100%);
+    transition: all 0.3s ease;
+    opacity: 1;
+}
+
+.wrapper{
+    width: 35%;
+    height: 476px;
+    margin: auto;
+    padding: 10px;
+    position: absolute;
+    z-index: 2;
+    background-color: rgb(254, 254, 253);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.header{
+    margin: 30px 0;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+}
+.inputTitle,.inputBody{
+    margin:0px auto;
+    font-size: 18px;
+    font-weight: 600;
+    width: 80%;
+}
+.inputTitle input, .inputBody textarea{
+    background-color: rgb(207, 207, 195, 0.4);
+    width: 90%;
+}
+
+
+/*--------------------*/
+.input{
+    height: 40px;
+    margin: 5px 0 20px 0;
+    border-radius: 6px;
+    border: 0px;
+    padding: 5px 5px  5px 10px;
+    font-size: 22px;
+}
+.inputText{
+    height: 140px;
+    margin: 5px 0 20px 0;
+    border-radius: 6px;
+    border: 0px;
+    padding: 5px 5px  5px 10px;
+    font-size: 22px;
+    resize: none;
+}
+input:active, :hover, :focus, textarea:active, :hover, :focus{
+    outline: 0;
+    outline-offset: 0;
+}
+.button{
+    width: 140px;
+    height: 50px;
+    border: 2px solid rgb(157, 206, 204);
+    background: 
+    linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 6px) calc(100% - 6px) no-repeat,            
+    linear-gradient(90deg, transparent 0%, rgba(243,150,4,0.93) 0%, #730af4 100%);
+    border-radius: 0px;
+    border: none;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    font-weight: 600;
+    transition: 0.5s;
+    cursor: pointer;
+    margin: 15px auto;
+}
+.button:hover{
+    width: 160px;
+    height: 60px;
+    font-size: 20px;
+    background-color: rgb(127, 179, 161, 0.5);
+}

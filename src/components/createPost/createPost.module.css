@@ -1,0 +1,23 @@
+.wrapper{
+    width: 120px;
+    height: 50px;
+    background-color: rgb(155 115 70 / 40%);
+    border: 2px solid rgb(225 99 212);
+    color:rgb(188 195 201);
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    font-weight: 600;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.wrapper:hover{
+    width: 140px;
+    height: 60px;
+    font-size: 20px;
+    background-color: rgb(251,215, 215, 0.3);
+}
+.wrapper:nth-child(3){
+    margin-left: 60px;
+}
